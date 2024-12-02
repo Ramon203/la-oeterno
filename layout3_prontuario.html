@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário</title>
+    <link rel="stylesheet" href="css/layout3_prontuario.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-button"><img src="img/leading-icon.png" alt="Seta para voltar"></a>
+            <h1>Prontuário</h1>
+        </div>
+        <div class="profile">
+            <img id="patientPhoto" src="img/User.png" alt="Profile Picture" class="profile-pic">
+            <h2 id="patientName">Nome</h2>
+        </div>
+        <div class="plantao-date">
+            <div class="date">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+            </div>
+            <div class="plantao">
+                Plantão:
+                <input type="radio" name="turno" value="diurno" id="diurno" checked> <label for="diurno">Diurno</label>
+                <input type="radio" name="turno" value="noturno" id="noturno"> <label for="noturno">Noturno</label>
+            </div>
+        </div>
+        <div class="info" id="diurnoFields">
+            <h3>Diurno</h3>
+            <div class="info-box">
+                Alimentação<br>
+                <input type="radio" name="alimentacao_diurno" value="total"> <label for="total">Total</label>
+                <input type="radio" name="alimentacao_diurno" value="parcial"> <label for="parcial">Parcial</label>
+                <input type="radio" name="alimentacao_diurno" value="rejeicao"> <label for="rejeicao">Rejeição</label>
+            </div>
+            <div class="info-box">
+                Eliminações<br>
+                <input type="radio" name="eliminacoes_diurno" value="diurese"> <label for="diurese">Diurese</label>
+                <input type="radio" name="eliminacoes_diurno" value="evacuacao"> <label for="evacuacao">Evacuação</label>
+                <input type="radio" name="eliminacoes_diurno" value="diarreia"> <label for="diarreia">Diarreia</label>
+                <input type="radio" name="eliminacoes_diurno" value="ausencia"> <label for="ausencia">Ausência</label>
+            </div>
+            <div class="info-box">
+                Banho<br>
+                <input type="radio" name="banho_diurno" value="leito"> <label for="leito">Leito</label>
+                <input type="radio" name="banho_diurno" value="aspersao"> <label for="aspersao">Aspersão</label>
+                <input type="radio" name="banho_diurno" value="imersao"> <label for="imersao">Imersão</label>
+            </div>
+            <div class="info-box">
+                Medicação CPM<br>
+                <input type="radio" name="medicacao_diurno" value="aceitacao"> <label for="aceitacao">Aceitação</label>
+                <input type="radio" name="medicacao_diurno" value="rejeicao"> <label for="rejeicao">Rejeição</label>
+            </div>
+            <div class="info-box">
+                Troca<br>
+                <input type="text" name="troca_diurno" id="troca_diurno">
+            </div>
+            <div class="info-box">
+                Intercorrências<br>
+                <textarea name="intercorrencias_diurno" id="intercorrencias_diurno" rows="4" cols="50"></textarea>
+            </div>
+            <div class="info-box">
+                Responsável<br>
+                <input type="text" name="responsavel_diurno" id="responsavel_diurno">
+            </div>
+        </div>
+        <div class="info" id="noturnoFields" style="display:none;">
+            <h3>Noturno</h3>
+            <div class="info-box">
+                Alimentação<br>
+                <input type="radio" name="alimentacao_noturno" value="total"> <label for="total">Total</label>
+                <input type="radio" name="alimentacao_noturno" value="parcial"> <label for="parcial">Parcial</label>
+                <input type="radio" name="alimentacao_noturno" value="rejeicao"> <label for="rejeicao">Rejeição</label>
+            </div>
+            <div class="info-box">
+                Eliminações<br>
+                <input type="radio" name="eliminacoes_noturno" value="diurese"> <label for="diurese">Diurese</label>
+                <input type="radio" name="eliminacoes_noturno" value="evacuacao"> <label for="evacuacao">Evacuação</label>
+                <input type="radio" name="eliminacoes_noturno" value="diarreia"> <label for="diarreia">Diarreia</label>
+                <input type="radio" name="eliminacoes_noturno" value="ausencia"> <label for="ausencia">Ausência</label>
+            </div>
+            <div class="info-box">
+                Banho<br>
+                <input type="radio" name="banho_noturno" value="leito"> <label for="leito">Leito</label>
+                <input type="radio" name="banho_noturno" value="aspersao"> <label for="aspersao">Aspersão</label>
+                <input type="radio" name="banho_noturno" value="imersao"> <label for="imersao">Imersão</label>
+            </div>
+            <div class="info-box">
+                Medicação CPM<br>
+                <input type="radio" name="medicacao_noturno" value="aceitacao"> <label for="aceitacao">Aceitação</label>
+                <input type="radio" name="medicacao_noturno" value="rejeicao"> <label for="rejeicao">Rejeição</label>
+            </div>
+            <div class="info-box">
+                Troca<br>
+                <input type="text" name="troca_noturno" id="troca_noturno">
+            </div>
+            <div class="info-box">
+                Intercorrências<br>
+                <textarea name="intercorrencias_noturno" id="intercorrencias_noturno" rows="4" cols="50"></textarea>
+            </div>
+            <div class="info-box">
+                Responsável<br>
+                <input type="text" name="responsavel_noturno" id="responsavel_noturno">
+            </div>
+        </div>
+        <div class="actions">
+            <button id="saveButton" class="action-button save">Salvar</button>
+        </div>
+    </div>
+    <script src="js/layout3_prontuario.js"></script>
+</body>
+</html>

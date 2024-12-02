@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="css/layout4_dados.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-button"><img src="img/leading-icon.png" alt="Seta para voltar"></a>
+            <h1>Dados</h1>
+        </div>
+        <div class="profile">
+            <img id="patientPhoto" src="img/user.png" alt="Foto do Paciente" class="profile-pic">
+        </div>
+        <div class="info">
+            <div class="info-box">
+                <label>Nome Completo:</label>
+                <p id="patientName" class="editable"></p>
+                <input type="text" id="editPatientName" class="edit-input" style="display: none;">
+            </div>
+            <div class="info-box">
+                <label>Data de Nascimento:</label>
+                <p id="patientDOB" class="editable"></p>
+                <input type="date" id="editPatientDOB" class="edit-input" style="display: none;">
+            </div>
+            <div class="info-box">
+                <label>CPF:</label>
+                <p id="patientCPF" class="editable"></p>
+                <input type="text" id="editPatientCPF" class="edit-input" style="display: none;">
+            </div>
+            <div class="info-box">
+                <label>RG:</label>
+                <p id="patientRG" class="editable"></p>
+                <input type="text" id="editPatientRG" class="edit-input" style="display: none;">
+            </div>
+            <div class="info-box">
+                <label>Nome do Responsável:</label>
+                <p id="patientResponsible" class="editable"></p>
+                <input type="text" id="editPatientResponsible" class="edit-input" style="display: none;">
+            </div>
+        </div>
+        <div class="actions">
+            <button id="editButton"><img src="img/FAB2.png" alt="Editar"></button>
+            <button id="confirmButton" style="display: none;"><img src="img/FAB3.png" alt="Confirmar"></button>
+            <button id="cancelButton" style="display: none;"><img src="img/FAB.png" alt="Cancelar"></button>
+        </div>
+    </div>
+    <script src="js/layout4_dados.js"></script>
+</body>
+</html>

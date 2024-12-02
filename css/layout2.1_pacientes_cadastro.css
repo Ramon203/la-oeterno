@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-left: -8px;
+    margin-right: 8px;
+}
+
+.header {
+    background-color: #805CFF;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.back-button, .add-button {
+    text-decoration: none;
+    color: white;
+    background-color:;
+    font-size: 24px;
+    display: flex;
+    align-items: left;
+}
+
+.back-button img, .add-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.back-button {
+    margin-right: ; /* Adiciona margem à direita */
+    padding-bottom: 6px; /* Adiciona padding à esquerda */
+}
+
+.add-button {
+    margin-left: 0px; /* Adiciona margem à esquerda */
+    padding-right: 10px; /* Adiciona padding à direita */
+    padding-bottom: 6px;
+}
+
+.back-button-2, .add-button-2 {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.back-button-2 img, .add-button-2 img {
+    width: 40px;
+    height: 40px;
+}
+
+.back-button-2 {
+    margin-right: auto; /* Adiciona margem à direita */
+    padding-left: 10px; /* Adiciona padding à esquerda */
+}
+
+.add-button-2 {
+    margin-left: auto; /* Adiciona margem à esquerda */
+    padding-right: 10px; /* Adiciona padding à direita */
+}
+
+.info {
+	margin-left: 0px;
+    padding: 20px;
+}
+
+.info-box {
+    margin-bottom: 15px;
+}
+
+.info-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info-box input {
+    width: 97%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.action-button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.action-button.save {
+    background-color: #805CFF;
+    color: white;
+}
+
+.action-button.clear {
+    background-color: #FF5C5C;
+    color: white;
+}
+
+.action-button:hover {
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Media queries para telas menores (smartphones) */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        text-align: left; /* Centraliza o texto em dispositivos móveis */
+        width: 100%;
+    }
+
+    .info {
+        padding: 10px;
+    }
+}
