@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prontuário</title>
     <link rel="stylesheet" href="css/layout3_prontuario.css">
+    
 </head>
 <body>
     <div class="container">
@@ -27,8 +28,22 @@
                 <input type="radio" name="turno" value="noturno" id="noturno"> <label for="noturno">Noturno</label>
             </div>
         </div>
-        <div class="info" id="diurnoFields">
+		        <div class="info" id="diurnoFields">
             <h3>Diurno</h3>
+            <div class="info-box">
+                <label for="pa_diurno">PA:</label>
+                <input type="number" id="pa_diurno" name="pa_diurno">
+                <label for="r_diurno">R:</label>
+                <input type="number" id="r_diurno" name="r_diurno">
+                <label for="p_diurno">P:</label>
+                <input name="p_diurno" type="number" linha_larg="p_diurno">
+                <label for="temp_diurno">Temp.:</label>
+                <input type="number" id="temp_diurno" name="temp_diurno">
+                <label for="dx_diurno">DX:</label>
+                <input type="number" id="dx_diurno" name="dx_diurno">
+                <label for="sat_diurno">Sat.:</label>
+                <input type="number" id="sat_diurno" name="sat_diurno">
+            </div>
             <div class="info-box">
                 Alimentação<br>
                 <input type="radio" name="alimentacao_diurno" value="total"> <label for="total">Total</label>
@@ -65,9 +80,109 @@
                 Responsável<br>
                 <input type="text" name="responsavel_diurno" id="responsavel_diurno">
             </div>
+            <div class="info-box">
+                Encaminhar e auxiliar no banho/Higiene oral<br>
+                <input type="checkbox" name="banho_higiene_diurno" value="M"> <label for="banho_higiene_diurno_M">M</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="T"> <label for="banho_higiene_diurno_T">T</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="N"> <label for="banho_higiene_diurno_N">N</label>
+            </div>
+            <div class="info-box">
+                Oferecer água<br>
+                <input type="checkbox" name="oferecer_agua_diurno" value="M"> <label for="oferecer_agua_diurno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="T"> <label for="oferecer_agua_diurno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="N"> <label for="oferecer_agua_diurno_N">N</label>
+            </div>
+             <div class="info-box">
+                Encaminhar e auxiliar no banho/Higiene oral<br>
+                <input type="checkbox" name="banho_higiene_diurno" value="M"> <label for="banho_higiene_diurno_M">M</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="T"> <label for="banho_higiene_diurno_T">T</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="N"> <label for="banho_higiene_diurno_N">N</label>
+            </div>
+            <div class="info-box">
+                Oferecer água<br>
+                <input type="checkbox" name="oferecer_agua_diurno" value="M"> <label for="oferecer_agua_diurno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="T"> <label for="oferecer_agua_diurno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="N"> <label for="oferecer_agua_diurno_N">N</label>
+            </div>
+             <div class="info-box">
+                Anotar controle diurese e evacuação<br>
+                <input type="checkbox" name="banho_higiene_diurno" value="M"> <label for="banho_higiene_diurno_M">M</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="T"> <label for="banho_higiene_diurno_T">T</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="N"> <label for="banho_higiene_diurno_N">N</label>
+            </div>
+            <div class="info-box">
+                Realizar e anotar glicemia capilar (dextro)<br>
+                <input type="checkbox" name="oferecer_agua_diurno" value="M"> <label for="oferecer_agua_diurno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="T"> <label for="oferecer_agua_diurno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="N"> <label for="oferecer_agua_diurno_N">N</label>
+            </div>
+             <div class="info-box">
+                Realizar troca de fraldas sempre que necessário<br>
+                <input type="checkbox" name="banho_higiene_diurno" value="M"> <label for="banho_higiene_diurno_M">M</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="T"> <label for="banho_higiene_diurno_T">T</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="N"> <label for="banho_higiene_diurno_N">N</label>
+            </div>
+            <div class="info-box">
+                Checar e administrar medições de PM<br>
+                <input type="checkbox" name="oferecer_agua_diurno" value="M"> <label for="oferecer_agua_diurno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="T"> <label for="oferecer_agua_diurno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="N"> <label for="oferecer_agua_diurno_N">N</label>
+            </div>
+             <div class="info-box">
+                Estimular e anotar aceitação da dieta<br>
+                <input type="checkbox" name="banho_higiene_diurno" value="M"> <label for="banho_higiene_diurno_M">M</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="T"> <label for="banho_higiene_diurno_T">T</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="N"> <label for="banho_higiene_diurno_N">N</label>
+            </div>
+            <div class="info-box">
+                Etimular injesta hídrica e anotar aceitação<br>
+                <input type="checkbox" name="oferecer_agua_diurno" value="M"> <label for="oferecer_agua_diurno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="T"> <label for="oferecer_agua_diurno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="N"> <label for="oferecer_agua_diurno_N">N</label>
+            </div>
+            <div class="info-box">
+                Estimular/Auxiliar na dembulação<br>
+                <input type="checkbox" name="banho_higiene_diurno" value="M"> <label for="banho_higiene_diurno_M">M</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="T"> <label for="banho_higiene_diurno_T">T</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="N"> <label for="banho_higiene_diurno_N">N</label>
+            </div>
+            <div class="info-box">
+                Apoio Emocional<br>
+                <input type="checkbox" name="oferecer_agua_diurno" value="M"> <label for="oferecer_agua_diurno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="T"> <label for="oferecer_agua_diurno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="N"> <label for="oferecer_agua_diurno_N">N</label>
+            </div>
+            <div class="info-box">
+                Observar padrão de sono<br>
+                <input type="checkbox" name="banho_higiene_diurno" value="M"> <label for="banho_higiene_diurno_M">M</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="T"> <label for="banho_higiene_diurno_T">T</label>
+                <input type="checkbox" name="banho_higiene_diurno" value="N"> <label for="banho_higiene_diurno_N">N</label>
+            </div>
+            <div class="info-box">
+                Observar, estimular ou fazer mudança de decubito<br>
+                <input type="checkbox" name="oferecer_agua_diurno" value="M"> <label for="oferecer_agua_diurno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="T"> <label for="oferecer_agua_diurno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_diurno" value="N"> <label for="oferecer_agua_diurno_N">N</label>
+            </div>
+            
+            <!-- Continue adicionando os campos para as outras ações -->
         </div>
         <div class="info" id="noturnoFields" style="display:none;">
             <h3>Noturno</h3>
+            <div class="info-box">
+                <label for="pa_noturno">PA:</label>
+                <input type="number" id="pa_noturno" name="pa_noturno">
+                <label for="r_noturno">R:</label>
+                <input type="number" id="r_noturno" name="r_noturno">
+                <label for="p_noturno">P:</label>
+                <input type="number" id="p_noturno" name="p_noturno">
+                <label for="temp_noturno">Temp.:</label>
+                <input type="number" id="temp_noturno" name="temp_noturno">
+                <label for="dx_noturno">DX:</label>
+                <input type="number" id="dx_noturno" name="dx_noturno">
+                <label for="sat_noturno">Sat.:</label>
+                <input type="number" id="sat_noturno" name="sat_noturno">
+            </div>
             <div class="info-box">
                 Alimentação<br>
                 <input type="radio" name="alimentacao_noturno" value="total"> <label for="total">Total</label>
@@ -104,11 +219,87 @@
                 Responsável<br>
                 <input type="text" name="responsavel_noturno" id="responsavel_noturno">
             </div>
+            <div class="info-box">
+                Encaminhar e auxiliar no banho/Higiene oral<br>
+                <input type="checkbox" name="banho_higiene_noturno" value="M"> <label for="banho_higiene_noturno_M">M</label>
+                <input type="checkbox" name="banho_higiene_noturno" value="T"> <label for="banho_higiene_noturno_T">T</label>
+                <input type="checkbox" name="banho_higiene_noturno" value="N"> <label for="banho_higiene_noturno_N">N</label>
+            </div>
+            <div class="info-box">
+                Oferecer água<br>
+                <input type="checkbox" name="banho_higiene_noturno" value="M"> <label for="banho_higiene_noturno_M">M</label>
+                <input type="checkbox" name="banho_higiene_noturno" value="T"> <label for="banho_higiene_noturno_T">T</label>
+                <input type="checkbox" name="banho_higiene_noturno" value="N"> <label for="banho_higiene_noturno_N">N</label>
+            </div>
+            <div class="info-box">
+                Anotar controle diurese e evacuação<br>
+                <input type="checkbox" name="banho_higiene_noturno" value="M"> <label for="banho_higiene_noturno_M">M</label>
+                <input type="checkbox" name="banho_higiene_noturno" value="T"> <label for="banho_higiene_noturno_T">T</label>
+                <input type="checkbox" name="banho_higiene_noturno" value="N"> <label for="banho_higiene_noturno_N">N</label>
+            </div>
+            <div class="info-box">
+                Realizar e anotar glicemia capilar (dextro)<br>
+                <input type="checkbox" name="oferecer_agua_noturno" value="M"> <label for="oferecer_agua_noturno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="T"> <label for="oferecer_agua_noturno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="N"> <label for="oferecer_agua_noturno_N">N</label>
+            </div>
+            <div class="info-box">
+                Realizar troca de fraldas sempre que necessário<br>
+                <input type="checkbox" name="oferecer_agua_noturno" value="M"> <label for="oferecer_agua_noturno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="T"> <label for="oferecer_agua_noturno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="N"> <label for="oferecer_agua_noturno_N">N</label>
+            </div>
+            <div class="info-box">
+                Checar e administrar medições de PM<br>
+                <input type="checkbox" name="oferecer_agua_noturno" value="M"> <label for="oferecer_agua_noturno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="T"> <label for="oferecer_agua_noturno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="N"> <label for="oferecer_agua_noturno_N">N</label>
+            </div>
+            <div class="info-box">
+                Estimular e anotar aceitação da dieta<br>
+                <input type="checkbox" name="oferecer_agua_noturno" value="M"> <label for="oferecer_agua_noturno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="T"> <label for="oferecer_agua_noturno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="N"> <label for="oferecer_agua_noturno_N">N</label>
+            </div>
+            <div class="info-box">
+                Etimular injesta hídrica e anotar aceitação<br>
+                <input type="checkbox" name="oferecer_agua_noturno" value="M"> <label for="oferecer_agua_noturno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="T"> <label for="oferecer_agua_noturno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="N"> <label for="oferecer_agua_noturno_N">N</label>
+            </div>
+            <div class="info-box">
+                Estimular/Auxiliar na dembulação<br>
+                <input type="checkbox" name="oferecer_agua_noturno" value="M"> <label for="oferecer_agua_noturno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="T"> <label for="oferecer_agua_noturno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="N"> <label for="oferecer_agua_noturno_N">N</label>
+            </div>
+            <div class="info-box">
+                Apoio Emocional<br>
+                <input type="checkbox" name="oferecer_agua_noturno" value="M"> <label for="oferecer_agua_noturno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="T"> <label for="oferecer_agua_noturno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="N"> <label for="oferecer_agua_noturno_N">N</label>
+            </div>
+            <div class="info-box">
+                Observar padrão de sono<br>
+                <input type="checkbox" name="oferecer_agua_noturno" value="M"> <label for="oferecer_agua_noturno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="T"> <label for="oferecer_agua_noturno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="N"> <label for="oferecer_agua_noturno_N">N</label>
+            </div>
+            <div class="info-box">
+                Observar, estimular ou fazer mudança de decubito<br>
+                <input type="checkbox" name="oferecer_agua_noturno" value="M"> <label for="oferecer_agua_noturno_M">M</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="T"> <label for="oferecer_agua_noturno_T">T</label>
+                <input type="checkbox" name="oferecer_agua_noturno" value="N"> <label for="oferecer_agua_noturno_N">N</label>
+            </div>          
+            <!-- Continue adicionando os campos para as outras ações -->
         </div>
         <div class="actions">
-            <button id="saveButton" class="action-button save">Salvar</button>
-        </div>
+    <img id="saveButton" src="img/FAB3.png" alt="Salvar" class="action-button save" style="cursor: pointer;">
+</div>
+
     </div>
+    
     <script src="js/layout3_prontuario.js"></script>
 </body>
 </html>
+
